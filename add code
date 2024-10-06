@@ -1,0 +1,11 @@
+//add code
+include <stdio.h>;
+
+int main ()
+{
+  int a = 0; int b = 0; 
+  scanf("%d %d",&a,&a);
+  int sum = a + b;
+  printf("%d/n",sum);
+  return 0:
+}
