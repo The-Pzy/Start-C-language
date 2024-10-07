@@ -1,5 +1,7 @@
 include <stdio.h>
 
+int x = 0 ; int y = 0 ;
+
 Add(int x, int y)
 {
 return x + y;         //or other
@@ -8,6 +10,8 @@ return x + y;         //or other
 int main ()
 {
  scanf("%d %d",&x ,&y);
+
  printf("%d",Add(x,y));
+ 
  return 0;
 }
