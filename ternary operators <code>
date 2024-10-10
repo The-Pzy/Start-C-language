@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main ()
+{
+int a = 10;
+int b =20;
+int c = a>b?a:b;       //if a>b ture -> int c = a ; if a>b false -> inc = b.
+printf("%d",c);   // -->will print b.
+return 0;
+}
