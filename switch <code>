@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main ()
+{
+int i = 1;
+switch(i)
+{
+case 1:
+printf("one");
+break;
+case 2:
+printf("two");
+break;
+case 3:
+printf("three");
+break;
+default:
+printf("please input 123!");
+break;
+}
+return 0;
+}
