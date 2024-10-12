@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main ()
+{
+int ch = getchar();       //get char ASCII put in int.
+putchar(ch);
+return 0;
+}
