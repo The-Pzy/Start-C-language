@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+int main ()
+{
+  srand ((unsigned int)time(NULL));
+  int ret = sand();   // 输出值为随机数.
+  printf("%d",ret);
+  return 0;
+}
