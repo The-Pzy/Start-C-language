@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main ()
+{
+  again :
+  printf("hello world!");
+  goto again;
+  return 0;
+}
