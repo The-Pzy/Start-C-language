@@ -1,0 +1,14 @@
+test1.c:
+
+int a = 10;
+
+test2.c:
+
+int main()
+{
+printf("%d",a);
+extern int a;
+return 0;
+}
+
+//多个c文件只能有一个main函数！
