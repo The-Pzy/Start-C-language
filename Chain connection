@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+	printf("%d", printf("%d", printf("%d", 43)));
+	return 0;
+}
+
+
+//该方法使用要求函数必须有返回值，否则不可使用！
