@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+struct stu
+{
+	char name[20];
+	int number;
+	char sex[10];
+	int age;
+};
+
+int main()
+{
+	struct stu s = {"sir.wang",110,"man",51};
+	printf("%s %d %s %d", s.name, s.number, s.sex, s.age);
+	return 0;
+}
