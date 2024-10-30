@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void print(unsigned int num)
+{
+	if (num > 9)
+	{
+		print(num / 10);
+	}
+	printf("%d ", num%10);
+}
+
+int main()
+{
+	unsigned int num = 0;               //enter 4321
+	scanf("%u", &num);
+	print(num);               //print 4 3 2 1
+	return 0;
+}
