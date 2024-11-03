@@ -1,0 +1,9 @@
+#include <stdio.h>
+#define a 3
+#define b 4
+
+int main()
+{
+	printf("%d", a + b);
+	return 0;
+}
