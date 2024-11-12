@@ -1,7 +1,7 @@
 #include <stdio.h>
-int main ()
+int main()
 {
-int ch = getchar();       //get char ASCII put in int.
-putchar(ch);
-return 0;
+	int ch = getchar();       //get char ASCII put in int.
+	putchar(ch);
+	return 0;
 }
