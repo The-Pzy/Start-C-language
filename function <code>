@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-int x = 0 ; int y = 0 ;
+int x = 0; int y = 0;
 
 Add(int x, int y)
 {
-return x + y;         //or other
+	return x + y;         //or other
 }
 
-int main ()
+int main()
 {
- scanf("%d %d",&x ,&y);
+	scanf("%d %d", &x, &y);
 
- printf("%d",Add(x,y));
- 
- return 0;
+	printf("%d", Add(x, y));
+
+	return 0;
 }
