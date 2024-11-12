@@ -3,21 +3,21 @@
 #include <windows.h>
 #include<stdlib.h>
 
-int main ()
+int main()
 {
-char arr1 [] = "welcome to china!!!";
-char arr2 [] = "###################";
-int left = 0;
-int right = strlen(arr) - 1;
-printf("%s",arr2);
-Sleep(1000);
-while (left <= right)
-{
-arr2[left] = arr1[left];
-arr2[right] = arr1[right];
-system("cls");
-printf("%s",arr2);
-Sleep(1000);
-}
-return 0;
+	char arr1[] = "welcome to china!!!";
+	char arr2[] = "###################";
+	int left = 0;
+	int right = strlen(arr) - 1;
+	printf("%s", arr2);
+	Sleep(1000);
+	while (left <= right)
+	{
+		arr2[left] = arr1[left];
+		arr2[right] = arr1[right];
+		system("cls");
+		printf("%s", arr2);
+		Sleep(1000);
+	}
+	return 0;
 }
