@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char arr[12] = { 0 };
+	//如果要给已经创建好的字符数组放进一连串字符，需要使用strcpy。
+	strcpy(arr, "Hello World");
+	printf("%s ", arr);
+	return 0;
+}
