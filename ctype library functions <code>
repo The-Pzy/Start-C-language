@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main()
+{
+	char ch = '0';
+	while (scanf(" %c", &ch) == 1)  //%c前面加个空格，代表读取下一个字符前，忽略前面的空白符号(包括\n)。
+	{
+		if (isupper(ch))
+		{
+			printf("这是一个大写字母!\n");
+		}
+		else if (islower(ch))
+		{
+			printf("这是一个小写字母!\n");
+		}
+		else
+		{
+			printf("这不是字母!\n");
+		}
+	}
+	return 0;
+}
