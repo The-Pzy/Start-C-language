@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+struct peo
+{
+	char name[20];
+	int num;
+	int high;
+};
+
+void test1(struct peo who)
+{
+	printf("%s %d %d\n", who.name, who.num, who.high);
+}
+
+void test2(struct peo* who)
+{
+	printf("%s %d %d\n", who->name, who->num, who->high);  //仅指针可以用->，等价于(*who).name
+}
+
+int main()
+{
+	struct peo who = { "Mr.wang",110,180 };
+	test1(who);
+	test2(&who); 
+	return 0;
+}
