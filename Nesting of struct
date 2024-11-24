@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+struct peo
+{
+	char name[20];
+	char sex[5];
+	int age;
+};
+
+struct a_peo
+{
+	struct peo p;
+	int tele;
+	int high;
+};
+
+int main()
+{
+	struct a_peo who = { {"Mr.wang","男",32},110,170 };
+	printf("%s %s %d %d %d ", who.p.name, who.p.sex, who.p.age, who.tele, who.high);
+	return 0;
+}
