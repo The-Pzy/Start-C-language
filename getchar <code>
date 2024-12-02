@@ -1,0 +1,14 @@
+//如果想要一个个读取字符放进数组里，并且包含空格，那么可以用上getchar():
+
+#include <stdio.h>
+
+int main()
+{
+	char str[100] = "0";
+	int i = 0;
+	while ((str[i] = getchar()) != '\n')
+	{
+		i++;
+	}
+	return 0;
+}
