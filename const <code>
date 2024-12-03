@@ -1,0 +1,12 @@
+int main()
+{
+	int a = 0;
+	const int* p = &a;
+	//当在*号前使用const，将无法改变指针指向变量的值。
+	//即：*p = 10   err
+	int n = 10;
+	int* const p = &n;
+	//当在*号后使用const，将无法改变指针变量存储的地址。
+	//即：p = &a    err
+	return 0;
+}
