@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+	char arr[100] = { 0 };
+	gets(arr);             //可以将读取的字符串录入arr中。
+	printf("%s", arr);
+	return 0;
+}
