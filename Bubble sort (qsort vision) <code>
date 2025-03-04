@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int cmp(const void* a, const void* b)
+{
+	return *(int*)a - *(int*)b;
+}
+
+void Swap(char* a, char* b, int wide)
+{
+	int i = 0;
+	for (i = 0; i < wide; i++)
+	{
+		char tmp = *a;
+		*a = *b;
+		*b = tmp;
+		a++;
+		b++;
+	}
+}
+
+void Bubble(void* base, int sz, int wide, int (*cmp)(const void* a, const void* b))
+{
+	int i = 0;
+	int j = 0;
+	for (i = 0; i < sz-1; i++)
+	{
+		int flag = 1;
+		for (j = 0; j < sz - i-1 ; j++)
+		{
+			if (cmp((char*)base + wide * j, (char*)base + wide * (j + 1))>0)
+			{
+				Swap((char*)base + wide * j, (char*)base + wide * (j + 1) ,wide);
+				flag = 0;
+			}
+		}
+		if(flag == 1)
+			break;
+	}
+}
+
+int main()
+{
+	int arr[] = {9,8,7,6,5,4,3,2,1,0};
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	Bubble(arr,sz,sizeof(arr[0]), cmp);
+	int i = 0;
+	for (i = 0; i < sz; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	return 0;
+}
